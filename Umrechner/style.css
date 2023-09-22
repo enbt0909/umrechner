@@ -1,0 +1,47 @@
+.umrechner{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.eingabefeld {
+   display: flex;
+   flex-direction: column;
+   margin: 0 10px;
+   border: 1px solid #000;
+   max-width: 50%;
+}
+
+.umrechner input {
+   border: none;
+   border-bottom: solid 1px gray;
+   appearance: textfield;
+}
+
+.umrechner input::-webkit-inner-spin-button {
+   appearance: none;
+}
+
+.umrechner input:focus {
+   outline: none;
+}
+
+.umrechner input,
+.umrechner label {
+   padding: 0.5em;
+   text-align: center;
+}
+
+.umrechner * {
+   font-family: 'Segoe Script', Helvetica, sans-serif, Arial;
+   font-size: 1rem;
+}
+
+@media (max-width: 960px) {
+   .umrechner{
+      flex-direction: column;
+   }
+   .eingabefeld{
+      max-width: 95%;
+   }
+}
